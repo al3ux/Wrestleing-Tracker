@@ -13,13 +13,13 @@ struct ContentView: View {
             VStack {
                 CustomText(text: "Sigma Wrestling")
                     .font(.title)
-                    .foregroundColor(.blue)
+                    .foregroundColor(.pink)
                 Spacer()
                 CustomText(text: "Welcome!")
-                    .foregroundColor(.blue)
-                Spacer()
-                CustomText(text:"you will see all rankings and standing when you enter!")
-                    .foregroundColor(.blue)
+                    .foregroundColor(.pink)
+                    Spacer()
+                CustomText(text:"Click bellow to see all standings plus team standings!")
+                    .foregroundColor(.pink)
                 Spacer()
                
                     
@@ -46,7 +46,7 @@ struct ContentView: View {
         let text: String
         var body: some View {
             Text(text)
-                .font(.custom("Marker Felt", size: 24))
+                .font(.custom("Marker Felt", size: 36))
         }
     }
     
@@ -77,6 +77,13 @@ struct WrestlingView: View {
             CustomText1(text: "#8 Jacob Jackson(Mt Carmel) 275 lbs 5-9-4")
                 .foregroundColor(.brown)
                 .padding()
+            CustomText1(text: "#9 Joey Cooper(Mt Carmel) 126 lbs 4-10-4")
+                .foregroundColor(.brown)
+                .padding()
+            CustomText1(text: "#10 Micheal Rivera(Barrington) 175lbs 3-11-4")
+                .foregroundColor(.red)
+                .padding()
+            
             
             
         }
@@ -101,7 +108,33 @@ struct CustomText1: View {
 struct TeamsView: View {
     var body: some View {
         VStack {
+            CustomText(text: "TOP 5 TEAMS IN ILLINOIS")
+                .foregroundColor(.blue)
+                .padding()
+            CustomText(text: "#1 BARRINGTON")
+                .foregroundColor(.red)
+                .padding()
+            CustomText(text:"#2 MT CARMEL")
+                .foregroundColor(.brown)
+                .padding()
+            CustomText(text:"#3 HAMPSHIRE")
+                .foregroundColor(.purple)
+                .padding()
+            CustomText(text:"#4 PROVIENCE")
+                .foregroundColor(.green)
+                .padding()
+            CustomText(text:"#5 JACOBS")
+                .foregroundColor(.yellow)
+                .padding()
+
+
+
+
+            
+            
             
         }
+        Spacer()
     }
+
 }
